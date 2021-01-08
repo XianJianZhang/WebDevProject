@@ -112,6 +112,8 @@ media/
 # Ignore Django Migrations in Development if you are working on team
 
 # Only for Development only
+*.iml
+*.xml
 # **/migrations/**
 # !**/migrations
 # !**/migrations/__init__.py

@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{%static 'blog/main.css'%}">
+    <title>WebDev - {{title}}</title>
+    <nav class="nav-bar">
+      <h1>Navigation</h1>
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="{% url 'blog-home' %}">Home</a></li>
+        <li><a href="{% url 'blog-about' %}">About</a></li>
+      </ul>
+    </nav>
+  </head>
+  <body>
+    {% block content %}
+    {% endblock content %}
+  </body>
+</html>
